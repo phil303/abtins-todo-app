@@ -1,0 +1,14 @@
+.Header__title {
+	display: inline-block;
+	/*float: left;*/
+}
+
+.Header__notifications {
+	display: inline-block;
+	float: right;
+}
+
+.Header__login {
+	display: inline-block;
+	float:right;
+}
