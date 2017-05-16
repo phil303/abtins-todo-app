@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import CourseList from './CourseList';
+import Course from './Course'
 
 
 const props = {
-	name: "Postgrad course",
+	name: "Learn JavaScript",
 	courses: [{
 		name: "name",
 		subscribers: [],
@@ -11,18 +13,14 @@ const props = {
 	}],
 }
 
-
-
-
-
 // Container for our todo list
 class CommunityPage extends Component {
   render () {
     return (
       <div className="CommunityPage">
-        <Header name={ props.name } /> 
-        
-        {/*<List /> */}
+        <Header name={ props.name } />
+			{/*What is wrong here? When removed the page loads*/}
+				<CourseList />
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CommunityPage from './CommunityPage';
+import CourseList from './CourseList';
+import Course from './Course';
 
 
 class App extends Component {
