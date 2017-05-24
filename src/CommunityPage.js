@@ -4,10 +4,20 @@ import CourseList from './CourseList';
 import Course from './Course'
 
 
-const props = {
+const data = {
 	name: "Learn JavaScript",
 	courses: [{
-		name: "name",
+		name: "Javascript 101",
+		subscribers: [],
+		tags: ["Webdev"],
+	},
+	{
+		name: "HTML/CSS",
+		subscribers: [],
+		tags: [],
+	},
+	{
+		name: "Python",
 		subscribers: [],
 		tags: [],
 	}],
@@ -16,11 +26,11 @@ const props = {
 // Container for our todo list
 class CommunityPage extends Component {
   render () {
+
     return (
       <div className="CommunityPage">
-        <Header name={ props.name } />
-			{/*What is wrong here? When removed the page loads*/}
-				<CourseList />
+        <Header name={ data.name } />
+				<CourseList courses={ data.courses } onCourseClick={ this.props.onCourseClick } />
       </div>
     );
   }
