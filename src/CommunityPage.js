@@ -9,7 +9,7 @@ const data = {
 	courses: [{
 		name: "Javascript 101",
 		subscribers: [],
-		tags: ["Webdev"],
+		tags: ["Webdev", "Javascript"],
 	},
 	{
 		name: "HTML/CSS",
